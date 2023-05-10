@@ -13,17 +13,17 @@ h2 {
 }
 
 p {
-  font-family: 'Lato', sans-serif;
-  color:rgb(59, 42, 136);
+  font-family: 'Instrument Serif', serif;
+  color:rgb(60, 59, 61);
   font-size: 17px;
 }
 
 body {
-  background-color: rgb(166, 37, 37);
+  background-color: rgb(196, 50, 50);
 }
 
 img {
-  border-radius: 30%;
+  border-radius: 50%;
   width: 150px;
   height: 150px;
   padding: 20px;
@@ -47,10 +47,11 @@ img {
 i {
   font-size: 80px;
   border-radius: 50%;
+  color: red;
 }
 
 i:hover {
-  background-color: rgb(151, 10, 10);
+  color: rgb(151, 10, 10);
 }
 
 .card {
@@ -62,18 +63,35 @@ i:hover {
   border-radius: 10px;
 }
 
+script {
+  width: 600px;
+}
+
+#cover {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.grid-container img {
+  width: 100%;
+  height: auto;
+}
+
 @media (max-width: 960px) {
-  .container {
+  .card {
     width: 700px;
   }
 }
 @media (max-width: 720px) {
-  .container {
+  .card {
     width: 500px;
   }
 }
 @media (max-width: 540px) {
-  .container {
+  .card {
     width: 300px;
   }
 }
